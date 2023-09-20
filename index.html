@@ -7,11 +7,78 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons8-book-16.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <script
+      src="https://kit.fontawesome.com/7454466102.js"
+      crossorigin="anonymous"
+    ></script> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Start of Nav -->
+    <section class="nav-section">
+      <div class="logo"><p>Educationpower</p></div>
+      <nav class="nav-content">
+        <ul class="navbar">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Featured</a></li>
+          <li class="nav-item"><a href="#">How It Works</a></li>
+          <li class="nav-item"><a href="#">Testimonial</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#">Subscribe</a></li>
+        </ul>
+        <button class="sign-btn">Sign In</button>
+      </nav>
+    </section>
+    <!-- End of Nav -->
+
+    <!--Start Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="flex-display">
+          <div class="left-content">
+            <div class="light-image">
+              <img src="./assets/light.jpg" alt="hero-light-image" />
+            </div>
+          </div>
+          <div class="right-content">
+            <h1 class="main-heading">
+              Learn Everyday & Any New Skills Online with Top Instructor.
+            </h1>
+            <p class="sub-heading">
+              We are proudly to provide you Educationpower quality education on
+              your hand
+            </p>
+            <div class="search-content">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                class="text-inpt"
+                type="text"
+                placeholder="Insert Title or Keyword"
+              />
+              <label class="category-label" for="category">Categories</label>
+              <select class="category-select" id="category" name="category">
+                <!-- <option value="option1">Category 1</option>
+              <option value="option2">Category 2</option>
+              <option value="option3">Category 3</option> -->
+              </select>
+              <button class="search-btn">Search Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+  </body>
 </html>
