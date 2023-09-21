@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #20222d;
+  --button-color: #ff8800;
 }
 html {
   font-size: 62.5%;
@@ -54,7 +55,7 @@ body {
 }
 .nav-item a:hover,
 .nav-item a:active {
-  color: #ff8800;
+  color: var(--button-color);
   background-color: #333;
 }
 .sign-btn {
@@ -65,7 +66,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #ff8800;
+  background-color: var(--button-color);
 }
 .hero-section {
   background-color: var(--primary-color);
@@ -75,9 +76,10 @@ body {
 }
 .container {
   max-width: 80%;
+  max-width: 82rem;
   margin: 0 auto;
 }
-.flex-display {
+.hero-section .flex-display {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -92,7 +94,8 @@ body {
   background-color: #fff;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .light-image img {
   width: 100%;
@@ -106,12 +109,12 @@ body {
   align-self: flex-start;
   gap: 2.4rem;
 }
-.main-heading {
+.primary-heading {
   color: inherit;
   font-size: 3.2rem;
   font-weight: 600;
 }
-.sub-heading {
+.hero-section .sub-heading {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #999;
@@ -156,17 +159,227 @@ body {
 }
 .category-select {
   border: none;
-  color: #ff8800;
+  color: var(--button-color);
   width: 2rem;
   margin-right: 8px;
 }
 
 .search-btn {
   width: 100px;
-  background-color: #ff8800;
+  background-color: var(--button-color);
   padding: 1rem 1.2rem;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
   color: #fff;
+}
+.about-us {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.about-img {
+  width: 60rem;
+  height: auto;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+}
+.about-us .flex-display {
+  display: flex;
+  gap: 4.8rem;
+}
+.heading-content {
+  padding-top: 3rem;
+  width: 40rem;
+}
+.secondary-heading {
+  font-size: 2.8rem;
+  letter-spacing: -0.3px;
+  margin-bottom: 2.4rem;
+  line-height: 1.3;
+}
+.about-us .sub-heading {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+.explore-btn {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.courses-section {
+  background-color: #f2f5f9;
+  padding: 6.4rem 0;
+}
+.main-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+}
+.courses-section .sub-heading {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #666;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.course {
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
+
+  transition: all 0.3s ease-in;
+}
+.course:hover {
+  transform: translateY(-10px);
+}
+.course-img {
+  background-color: #cfd9e7c7;
+  width: 100%;
+  height: 15rem;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.course-content {
+  padding: 1.6rem;
+}
+.curr-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--button-color);
+  margin-bottom: 1rem;
+}
+.prev-price {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #8e8e8e;
+  text-decoration: line-through;
+}
+.course-fee {
+  margin-left: 1rem;
+  color: #8e8e8e;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+.course-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.rate-stars {
+  color: #ff8800;
+}
+.reviews {
+  font-size: 1rem;
+  color: #8e8e8e;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses-section .explore-btn {
+  display: inline-block;
+}
+
+.testimonial-section {
+  background-color: #f9f9f9;
+  padding: 6.4rem 0;
+}
+.grid-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  row-gap: 4rem;
+}
+.testimonial-section .heading-content {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-section .tertiary-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.testimonial-section .sub-heading {
+  font-size: 1.4rem;
+}
+.prev-next-icons {
+  justify-self: flex-end;
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.left,
+.right {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.testi-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2.4rem;
+}
+.first-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+.stars {
+  color: var(--button-color);
+}
+.first-div .logo {
+  width: 9rem;
+  height: auto;
+}
+.first-div .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.testi-content {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.author .img {
+  width: 40px;
+  height: 40px;
+  background-color: #f2f5f9;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.author-position {
+  font-size: 1rem;
+  color: #666;
 }
