@@ -1,0 +1,336 @@
+/* max-width 900 px small laptop*/
+@media (max-width: 56.5em) {
+  .logo p {
+    font-size: 2rem;
+  }
+  .navbar {
+    gap: 2.4rem;
+  }
+  .nav-item a:link,
+  .nav-item a:visited {
+    font-size: 1.3rem;
+  }
+  .sign-btn {
+    font-size: 1.3rem;
+  }
+  .hero-section {
+    padding-top: 10rem;
+    height: 85vh;
+  }
+  .container {
+    max-width: 80rem;
+  }
+  .hero-section .flex-display {
+    gap: 5rem;
+    height: calc(85vh - 100px);
+  }
+  .left-content {
+    max-width: 40rem;
+  }
+  .right-content {
+    max-width: 40rem;
+    gap: 2.8rem;
+  }
+  .primary-heading {
+    font-size: 3.2rem;
+  }
+  .hero-section .sub-heading {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .search-icon {
+    font-size: 1.2rem;
+    margin-right: 2px;
+  }
+  .text-inpt {
+    width: 140px;
+  }
+  .text-inpt::placeholder {
+    color: var(--grey-sub-heading);
+  }
+  .category-label {
+    margin-right: 4px;
+  }
+  .category-label::before {
+    left: -10px;
+  }
+  .category-select {
+    border: none;
+    color: var(--button-color);
+    width: 2rem;
+    margin-right: 4px;
+  }
+  .search-btn {
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  .secondary-heading {
+    font-size: 3rem;
+  }
+  .about-us .sub-heading {
+    font-size: 1.3rem;
+  }
+  .explore-btn {
+    font-size: 1.3rem;
+  }
+  .main-heading {
+    font-size: 3rem;
+  }
+  .courses-section .sub-heading {
+    font-size: 1.3rem;
+  }
+  .testimonial-section .tertiary-heading {
+    font-size: 3rem;
+  }
+  .testimonial-section .sub-heading {
+    font-size: 1.3rem;
+  }
+  .testi-content {
+    font-size: 1.3rem;
+    margin-bottom: 2.4rem;
+  }
+}
+/* max-width: 800 px Tablets */
+@media (max-width: 50em) {
+  .logo p {
+    font-size: 1.8rem;
+  }
+  .navbar {
+    gap: 2rem;
+  }
+  .nav-item a:link,
+  .nav-item a:visited {
+    font-size: 1.2rem;
+  }
+  .sign-btn {
+    font-size: 1.2rem;
+  }
+  .hero-section {
+    padding-top: 10rem;
+    height: 75vh;
+  }
+  .container {
+    max-width: 70rem;
+  }
+  .hero-section .flex-display {
+    gap: 5rem;
+    height: calc(75vh - 100px);
+  }
+  .left-content {
+    max-width: 35rem;
+  }
+  .right-content {
+    max-width: 35rem;
+    gap: 2.6rem;
+  }
+  .primary-heading {
+    font-size: 2.8rem;
+  }
+  .hero-section .sub-heading {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .search-icon {
+    display: none;
+  }
+  .text-inpt {
+    width: 140px;
+  }
+  .text-inpt::placeholder {
+    font-size: 1.1rem;
+  }
+  .category-label {
+    font-size: 1.1rem;
+  }
+  .category-select {
+    width: 1.5rem;
+  }
+  .search-btn {
+    font-size: 1.1rem;
+    width: auto;
+  }
+  .secondary-heading {
+    font-size: 2.8rem;
+  }
+  .about-us .sub-heading {
+    font-size: 1.2rem;
+  }
+  .explore-btn {
+    font-size: 1.2rem;
+  }
+  .main-heading {
+    font-size: 2.8rem;
+  }
+  .courses-section .sub-heading {
+    font-size: 1.2rem;
+  }
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    margin-bottom: 3.2rem;
+  }
+  .testimonial-section .tertiary-heading {
+    font-size: 2.8rem;
+  }
+  .testimonial-section .sub-heading {
+    font-size: 1.2rem;
+  }
+  .grid-display {
+    grid-template-columns: repeat(2, calc(70rem / 2 - 3rem));
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+  .testi-content {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+/* max-width: 700 px Tablets */
+@media (max-width: 43em) {
+  .logo p {
+    font-size: 2rem;
+  }
+  .nav-content {
+    display: none;
+  }
+  .hero-section {
+    padding-top: 8rem;
+    padding-left: 8rem;
+    height: 75vh;
+  }
+  .container {
+    max-width: 50rem;
+  }
+  .hero-section .flex-display {
+    height: calc(75vh - 80px);
+    align-items: normal;
+    justify-content: normal;
+  }
+  .left-content {
+    display: none;
+  }
+  .right-content {
+    align-self: normal;
+    max-width: 35rem;
+    gap: 2.6rem;
+  }
+  .about-us .flex-display {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+  .courses {
+    grid-template-columns: none;
+    justify-items: center;
+    gap: 4rem;
+  }
+  .grid-display {
+    grid-template-columns: none;
+    gap: 4rem;
+  }
+  .testi-content {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+  .grid-display .testi-box:last-of-type {
+    display: none;
+  }
+}
+/* max-width: 450px Tablets */
+@media (max-width: 28.5em) {
+  .logo p {
+    font-size: 1.6rem;
+  }
+  .hero-section {
+    padding-top: 6rem;
+    padding-left: 2rem;
+    height: 65vh;
+  }
+  .hero-section .flex-display {
+    height: calc(65vh - 60px);
+  }
+  .container {
+    max-width: 30rem;
+  }
+  .primary-heading {
+    font-size: 2rem;
+  }
+  .hero-section .sub-heading {
+    font-size: 1.1rem;
+  }
+  .search-btn {
+    padding: 1rem 0.8rem;
+    font-size: 1rem;
+  }
+  .text-inpt {
+    width: 120px;
+    padding: 2px;
+  }
+  .text-inpt::placeholder {
+    font-size: 1rem;
+  }
+  .category-label {
+    font-size: 1rem;
+  }
+  .about-img {
+    width: 30rem;
+  }
+  .heading-content {
+    padding-top: 3rem;
+    width: auto;
+  }
+  .secondary-heading {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+  .about-us .sub-heading {
+    margin-bottom: 2.4rem;
+    font-size: 1.1rem;
+  }
+  .explore-btn {
+    font-size: 1.2rem;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .courses-section .sub-heading {
+    font-size: 1.1rem;
+  }
+  .course {
+    /* width: 80%; */
+  }
+  .curr-price {
+    font-size: 1.3rem;
+  }
+  .prev-price {
+    font-size: 1.1rem;
+  }
+  .course-fee {
+    font-size: 1.1rem;
+  }
+  .course-title {
+    font-size: 1.2rem;
+  }
+  .testimonial-section .tertiary-heading {
+    font-size: 2rem;
+  }
+  .testimonial-section .sub-heading {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  .left,
+  .right {
+    width: 25px;
+    height: 25px;
+  }
+  .testi-content {
+    font-size: 1.1rem;
+  }
+  .author {
+    gap: 1.2rem;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+}
