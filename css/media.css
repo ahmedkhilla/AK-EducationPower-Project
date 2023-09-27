@@ -236,6 +236,9 @@
   .grid-display .testi-box:last-of-type {
     display: none;
   }
+  .show-menu {
+    display: block;
+  }
 }
 /* max-width: 450px Tablets */
 @media (max-width: 28.5em) {
@@ -297,9 +300,6 @@
   .courses-section .sub-heading {
     font-size: 1.1rem;
   }
-  .course {
-    /* width: 80%; */
-  }
   .curr-price {
     font-size: 1.3rem;
   }
@@ -332,5 +332,14 @@
   }
   .name {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 20em) {
+  .hero-section {
+    padding-top: 4rem;
+    padding-left: 1rem;
+  }
+  .container {
+    max-width: 90%;
   }
 }
